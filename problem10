@@ -1,0 +1,5 @@
+import re
+
+def is_integer_literal(string):
+    pattern = r'^(0[xX][0-9a-fA-F]+|0[0-7]*|\d+)$'
+    return bool(re.match(pattern, string))
